@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  padding: 70px 0;
+  background: $grey;
+  color: $white;
+  z-index: 2;
+
+  a {
+    color: inherit;
+  }
+
+  &__logo {
+    .icon {
+      size(120px, 40px);
+    }
+  }
+
+  &__link {
+    font: 600 24px/1.33 $font-base;
+    text-decoration: underline;
+  }
+
+  .contacts {
+    font: 24px/1.33 $font-base;
+
+    &__title {
+      text-transform: uppercase;
+      margin-bottom: 165px;
+    }
+  }
+
+  .contact .contacts__item {
+    font-weight: 300;
+  }
+}

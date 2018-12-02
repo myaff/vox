@@ -1,0 +1,128 @@
+.aside {
+  fixed(0px);
+  right: -100%;
+  size(50%, 100%);
+  z-index: 20;
+  background $white;
+  color: $black;
+  border-left 80px solid transparent;
+  background-clip: content-box;
+  transition: right 1s ease-out;
+  transform: translateZ(0);
+
+  &.is-open {
+    right: 0;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    size(80px, calc(100% - 280px));
+    absolute(0px, -80px);
+    background: $white;
+    z-index: 1;
+    transform: translateZ(0);
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    absolute(0, -80px, 0px);
+    z-index: 1;
+    border-top: 280px solid $white;
+    border-left: 80px solid transparent;
+    transform: translateZ(0);
+  }
+
+  &__close {
+    absolute(0px, 0px, 0, 17px);
+    size(auto, 115px);
+    padding: 35px 0 0;
+    background: $white;
+    z-index: 3;
+
+    .btn {
+      font-size: 40px;
+    }
+  }
+
+  &__content {
+    padding: 145px 0 30px;
+    z-index: 2;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  &__nav {
+    .nav {
+      &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      &__item {
+        display: block;
+        relative();
+        transform: translateZ(0);
+        font: 58px/1 $font-base;
+        padding: 0;
+        margin: 0;
+        
+        &::before {
+          content: '';
+          display: block;
+          size(auto, 4px);
+          max-width: 690px;
+          absolute(0, -0.1em, 0.2em, 0px);
+          background: currentColor;
+          transform: scaleX(0);
+          transform-origin: left center;
+          transition: transform 0.5s;
+        }
+
+        &:hover::before {
+          transform: scale(1);
+        }
+      }
+      &__link {
+        font: 600 vh(58, 1080px)/1.17 $font-base;
+        text-transform: uppercase;
+      }
+      &__total {
+        font: 300 vh(28, 1080px)/1.5 $font-base;
+        vertical-align: super;
+        margin-left: 0.5em;
+      }
+    }
+  }
+
+  &__contacts {
+    margin-top: vh(150, 1700);
+    transform: translateZ(0);
+
+    .contacts {
+      margin-top: 40px;
+
+      &__title {
+        font: 24px/0.8 $font-base;
+        text-transform: uppercase;
+        padding-right: 1em;
+        margin-bottom: 1em;
+        max-width: 310px;
+
+        &::after {
+          content: '';
+          display block;
+          size(180px, 1px);
+          absolute(0, 0, 0px, 0px);
+          background: currentColor;
+        }
+      }
+
+      &__item {
+        font: 300 14px/1.5 $font-base;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+extends template
+
+prepend page
+	- var layout = 'home';
+	- var currentPage = 'home';
+	- var hasFooter = false;
+	- var pageTitle = false;
+	- var pageDesc = false;
+	- var pageImg = false;
+
+block content
+	.page(class="page--" + currentPage)
+		+carousel(favorites).carousel--default

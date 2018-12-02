@@ -1,0 +1,34 @@
+.carousel {
+  &--default {
+    size(100%, calc(100vh - 115px));
+
+    .owl-stage-outer {
+      size(100%);
+    }
+    .owl-item {
+      img {
+        display: block;
+        size(100%, auto);
+      }
+    }
+    .owl-dots {
+      absolute(0, 0px);
+      bottom: 60px;
+      width: 100%;
+      flexy(center, center);
+      z-index: 2;
+
+      .owl-dot {
+        size(2px, 40px);
+        margin: 0 9px;
+        background: $white;
+        transition: all 0.3s;
+        
+        &.active {
+          transform: scaleX(4);
+        }
+      }
+    }
+  }
+
+}

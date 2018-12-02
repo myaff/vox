@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OG Title</title>
+    <meta property="og:title" content="OG Title">
+    <meta property="og:description" content="OG Description">
+    <meta property="og:image" content="OG Image">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="build/css/main.css" rel="stylesheet">
+    <script src="build/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="build/js/vendor/jquery.ba-throttle-debounce.js"></script>
+    <script src="https://cdn.rawgit.com/iserdmi/afterlag-js/2.0.2/dist/jquery.afterlag.min.js"></script>
+    <script src="build/img/svg/sprite.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
+  </head>
+  <body>
+    <div class="svg-sprite"></div>
+    <script>$('.svg-sprite').html(SVG_SPRITE);</script>
+    <div class="layout layout--projects">
+      <div class="header">
+        <div class="l-container">
+          <div class="header__content">
+            <div class="l-flex-middle-noBottom">
+              <div class="l-col-6">
+                <div class="header__logo"><a href="/">
+                          <svg class="icon">
+                            <use xlink:href="#logo"></use>
+                          </svg>
+                    <div class="text">Architects</div></a></div>
+              </div>
+              <div class="l-col-5">
+                <div class="header__text">Urban design and landscape</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__search">
+                <div class="field form__field">
+                  <label class="field__label" for="search">
+                    <input class="field__input" id="search">
+                  </label>
+                  <button class="btn btn--plain">
+                          <svg class="icon">
+                            <use xlink:href="#loupe"></use>
+                          </svg>
+                  </button>
+                </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar__content">
+                <nav class="nav sidebar__nav">
+                  <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="about.html">about</a></li>
+                    <li class="nav__item"><a class="nav__link active btn-open-aside" href="#">projects</a></li>
+                    <li class="nav__item"><a class="nav__link" href="contact.html">contact</a></li>
+                  </ul>
+                </nav>
+        </div>
+      </div>
+      <div class="page page--projects">
+        <div class="projects">
+          <div class="projects__item project"><a class="project__link" href="single.html">
+              <div class="project__img"><img src="build/img/projects/1.jpg"></div>
+              <div class="project__info">
+                <div class="project__title">E:MG</div>
+                <div class="project__desc">Advertising agency</div>
+              </div></a></div>
+          <div class="projects__item project"><a class="project__link" href="single.html">
+              <div class="project__img"><img src="build/img/projects/2.jpg"></div>
+              <div class="project__info">
+                <div class="project__title">Alfastroy</div>
+                <div class="project__desc">Development company</div>
+              </div></a></div>
+          <div class="projects__item project"><a class="project__link" href="single.html">
+              <div class="project__img"><img src="build/img/projects/3.jpg"></div>
+              <div class="project__info">
+                <div class="project__title">Clever park</div>
+                <div class="project__desc">Building with a block office space. <br/>Landscape of the river</div>
+              </div></a></div>
+          <div class="projects__item project"><a class="project__link" href="single.html">
+              <div class="project__img"><img src="build/img/projects/4.jpg"></div>
+              <div class="project__info">
+                <div class="project__title">Pampa green</div>
+                <div class="project__desc">Children club</div>
+              </div></a></div>
+          <div class="projects__item project"><a class="project__link" href="single.html">
+              <div class="project__img"><img src="build/img/projects/5.jpg"></div>
+              <div class="project__info">
+                <div class="project__title">Leo burnett</div>
+                <div class="project__desc">International <br/>advertising <br/>agency</div>
+              </div></a></div>
+          <div class="projects__item project"><a class="project__link" href="single.html">
+              <div class="project__img"><img src="build/img/projects/6.jpg"></div>
+              <div class="project__info">
+                <div class="project__title">SAATCHI & SAATCHI</div>
+                <div class="project__desc">International <br/>advertising <br/>agency</div>
+              </div></a></div>
+          <div class="projects__item project"><a class="project__link" href="single.html">
+              <div class="project__img"><img src="build/img/projects/7.jpg"></div>
+              <div class="project__info">
+                <div class="project__title">SAATCHI & SAATCHI</div>
+                <div class="project__desc">International <br/>advertising <br/>agency</div>
+              </div></a></div>
+          <div class="projects__item project"><a class="project__link" href="single.html">
+              <div class="project__img"><img src="build/img/projects/8.jpg"></div>
+              <div class="project__info">
+                <div class="project__title">Alliance</div>
+                <div class="project__desc">Business center interiors</div>
+              </div></a></div>
+          <div class="projects__item project"><a class="project__link" href="single.html">
+              <div class="project__img"><img src="build/img/projects/9.jpg"></div>
+              <div class="project__info">
+                <div class="project__title">SAATCHI & SAATCHI</div>
+                <div class="project__desc">International <br/>advertising <br/>agency</div>
+              </div></a></div>
+          <div class="projects__item project"><a class="project__link" href="single.html">
+              <div class="project__img"><img src="build/img/projects/10.jpg"></div>
+              <div class="project__info">
+                <div class="project__title">SAATCHI & SAATCHI</div>
+                <div class="project__desc">International <br/>advertising <br/>agency</div>
+              </div></a></div>
+        </div>
+      </div>
+      <div class="aside">
+        <div class="aside__close">
+          <button class="btn btn--plain btn-close-aside">
+                  <svg class="icon">
+                    <use xlink:href="#x"></use>
+                  </svg>
+          </button>
+        </div>
+        <div class="aside__content">
+                <nav class="nav aside__nav">
+                  <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="projects.html">All projects</a><span class="nav__total">105</span></li>
+                    <li class="nav__item"><a class="nav__link" href="projects.html">Architecture</a><span class="nav__total">18</span></li>
+                    <li class="nav__item"><a class="nav__link" href="projects.html">Urban design and&nbsp;landscape</a><span class="nav__total">27</span></li>
+                    <li class="nav__item"><a class="nav__link" href="projects.html">Commercial</a><span class="nav__total">19</span></li>
+                    <li class="nav__item"><a class="nav__link" href="projects.html">Public space</a><span class="nav__total">47</span></li>
+                    <li class="nav__item"><a class="nav__link" href="projects.html">Residential</a><span class="nav__total">25</span></li>
+                  </ul>
+                </nav>
+          <div class="aside__contacts">
+            <div class="contacts">
+              <div class="contacts__title">Address</div>
+              <div class="contacts__info">
+                <div class="contacts__item">127015, Moscow</div>
+                <div class="contacts__item">Bolshaya Novodmitrovskaya 36/12</div>
+                <div class="contacts__item">FLACON DESIGN FACTORY</div>
+                <div class="contacts__item">entrance 2, level 3</div>
+                <div class="contacts__item">Vox architects</div>
+              </div>
+            </div>
+            <div class="contacts">
+              <div class="contacts__title">Contact</div>
+              <div class="contacts__info">
+                <div class="contacts__item">T_ <a href="telto:+74995798824">+74995798824</a></div>
+                <div class="contacts__item">W_ <a href="https://vox-architects.com">vox-architects.com</a></div>
+                <div class="contacts__item">E_ <a href="mailto:info@vox-architects.com">info@vox-architects.com</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-rotate"></div>
+    <script src="build/js/vendor/owl.carousel.min.js"></script>
+    <script src="build/js/main.js"></script>
+  </body>
+</html>

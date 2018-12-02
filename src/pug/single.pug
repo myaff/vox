@@ -1,0 +1,54 @@
+extends template
+
+prepend page
+  - var layout = 'single';
+  - var currentPage = 'single';
+  - var hasFooter = true;
+  - var pageTitle = false;
+  - var pageDesc = false;
+  - var pageImg = false;
+
+block content
+  .page(class="page--" + currentPage)
+    .single
+      .single__img
+        img(src=single.img, alt=single.title)
+      .single__info.accordion
+        .l-container
+          .l-flex-wrap
+            .l-col-6
+              .single__title !{single.title}
+              .single__readmore
+                a.readmore(href="#") Read more
+            .l-col-2
+              .single__links
+                for item in single.links
+                  .single__links-item
+                    a.single__link(href=item.url)= item.title
+            .l-col-4
+              .single__props
+                .props.props--primary
+                  for item in single.props.primary
+                    dl.props__item
+                      dt.props__term !{item.name}: 
+                      dd.props__desc !{item.value}
+              .single__more
+                button.btn.btn--plain.btn-accordion
+                  +icon('arrow-down')
+            .l-col-5
+              .single__desc
+                p !{single.desc}
+            .l-col-2(data-push-left="off-1")
+              .single__team-text Team
+            .l-col-4
+              .single__props
+                .props.props--secondary
+                  for item in single.props.secondary
+                    dl.props__item
+                      dt.props__term !{item.name}: 
+                      dd.props__desc !{item.value}
+      .single__photos
+        .photos__grid
+          for item in single.photos
+            .photos__item(class="size--" + item.size)
+              img.photos__img(src=item.src)

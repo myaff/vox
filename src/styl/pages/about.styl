@@ -1,0 +1,101 @@
+.about {
+  .section {
+    &__img {
+      img {
+        display: block;
+        size(100%, auto);
+      }
+    }
+
+    &__info {
+      padding: 70px 0;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        display: block;
+        size(100%, 70px);
+        absolute(0, 0px, 0px);
+        background: $white;
+        z-index: 2;
+      }
+    }
+
+    &__title {
+      font: 600 24px/0.8 $font-base;
+      text-transform: uppercase;
+      display: inline-block;
+      relative();
+      padding-right: 0.5em;
+      margin-bottom: 50px;
+
+      &::after {
+        content: '';
+        display: block;
+        size(220px, 1px);
+        absolute(0, 100%, 0px);
+        background: currentColor;
+      }
+    }
+
+    &__desc {
+      font: 300 24px/1.33 $font-base;
+    }
+
+    &__more {
+      padding-top: 1rem;
+
+      .btn {
+        font-size: 50px;
+      }
+    }
+  }
+
+  &__story .accordion {
+    height: 430px;
+  }
+
+  &__team .accordion {
+    height: 390px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $black;
+
+    &::before {
+      height: 30px;
+    }
+  }
+
+  &__press {
+    .section__title::before {
+      width: 286px;
+    }
+  }
+
+  &__map {
+    .map {
+      height: 670px;
+      background: $grey-light;
+    }
+
+    .accordion {
+      height: 510px;
+      padding-bottom: 280px;
+
+      &::before {
+        height: 280px;
+      }
+    }
+  }
+}
+
+.press {
+  column-count: 4;
+  column-gap: $grid-gutter;
+
+  &__item {
+    font: 600 24px/1.33 $font-base;
+    text-transform: uppercase;
+    color: #a7a9ac;
+    border-bottom: 1px solid currentColor;
+  }
+}

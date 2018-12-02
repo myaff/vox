@@ -1,0 +1,313 @@
+{
+	"settings": {
+		"scripts": [
+			"build/js/vendor/owl.carousel.min.js"
+		],
+		"socials": [
+			"vkontakte",
+			"facebook",
+			"twitter",
+			"telegram"
+		],
+		"ogDefaults": {
+			"title": "OG Title",
+			"description": "OG Description",
+			"image": "OG Image"
+		}
+	},
+	"navs": {
+		"main": [
+			{
+				"title": "about",
+				"key": "about",
+				"url": "about.html"
+			},
+			{
+				"title": "projects",
+				"key": "projects",
+				"url": "#"
+			},
+			{
+				"title": "contact",
+				"key": "contact",
+				"url": "contact.html"
+			}
+		],
+		"projects": [
+			{
+				"title": "All projects",
+				"url": "projects.html",
+				"total": 105
+			},
+			{
+				"title": "Architecture",
+				"url": "projects.html",
+				"total": 18
+			},
+			{
+				"title": "Urban design and&nbsp;landscape",
+				"url": "projects.html",
+				"total": 27
+			},
+			{
+				"title": "Commercial",
+				"url": "projects.html",
+				"total": 19
+			},
+			{
+				"title": "Public space",
+				"url": "projects.html",
+				"total": 47
+			},
+			{
+				"title": "Residential",
+				"url": "projects.html",
+				"total": 25
+			}
+		]
+	},
+	"projects": [
+		{
+			"title": "E:MG",
+			"desc": "Advertising agency",
+			"url": "single.html",
+			"img": "build/img/projects/1.jpg"
+		},
+		{
+			"title": "Alfastroy",
+			"desc": "Development company",
+			"url": "single.html",
+			"img": "build/img/projects/2.jpg"
+		},
+		{
+			"title": "Clever park",
+			"desc": "Building with a block office space. <br/>Landscape of the river",
+			"url": "single.html",
+			"img": "build/img/projects/3.jpg"
+		},
+		{
+			"title": "Pampa green",
+			"desc": "Children club",
+			"url": "single.html",
+			"img": "build/img/projects/4.jpg"
+		},
+		{
+			"title": "Leo burnett",
+			"desc": "International <br/>advertising <br/>agency",
+			"url": "single.html",
+			"img": "build/img/projects/5.jpg"
+		},
+		{
+			"title": "SAATCHI & SAATCHI",
+			"desc": "International <br/>advertising <br/>agency",
+			"url": "single.html",
+			"img": "build/img/projects/6.jpg"
+		},
+		{
+			"title": "SAATCHI & SAATCHI",
+			"desc": "International <br/>advertising <br/>agency",
+			"url": "single.html",
+			"img": "build/img/projects/7.jpg"
+		},
+		{
+			"title": "Alliance",
+			"desc": "Business center interiors",
+			"url": "single.html",
+			"img": "build/img/projects/8.jpg"
+		},
+		{
+			"title": "SAATCHI & SAATCHI",
+			"desc": "International <br/>advertising <br/>agency",
+			"url": "single.html",
+			"img": "build/img/projects/9.jpg"
+		},
+		{
+			"title": "SAATCHI & SAATCHI",
+			"desc": "International <br/>advertising <br/>agency",
+			"url": "single.html",
+			"img": "build/img/projects/10.jpg"
+		}
+	],
+	"single": {
+		"title": "AR",
+		"img": "build/img/single/1.jpg",
+		"props": {
+			"primary": [
+				{
+					"name": "Client",
+					"value": "AR/ Airports Regional Head Office"
+				},
+				{
+					"name": "Location",
+					"value": "&laquo;Lighthouse&raquo;, Moscow, Russia"
+				},
+				{
+					"name": "Project area",
+					"value": "1200 m²"
+				},
+				{
+					"name": "Status",
+					"value": "Completed 2014"
+				}
+			],
+			"secondary": [
+				{
+					"name": "Photos",
+					"value": "Alexey Kniazev"
+				},
+				{
+					"name": "Creative/design group",
+					"value": "Boris Voskoboynikov, Elena Potemkina, Dmitry Ovcharov, Maria Akhremenkova"
+				},
+				{
+					"name": "Chief engineer",
+					"value": "Sergey Kurepin"
+				},
+				{
+					"name": "Project group",
+					"value": "Olga Ivlieva, Margarita Kornienko"
+				},
+				{
+					"name": "Project managing",
+					"value": "Daria Turkina"
+				}
+			]
+		},
+		"desc": "For a company that provides administrative management for terminals of several regional airports, the architects have chosen the space in a modern office building in the center of Moscow. Architects decided to form moderate, and in the same time expressive, interiors. The customer fully relied on the professional competence of the team granted the freedom to create. The only constraints were conditioned by the working style of this particular office – the office is not meant to be often attended by visitors, and by the company’s activities: complex financial and technical development of airport facilities.",
+		"photos": [
+			{
+				"src": "build/img/single/2.jpg",
+				"size": 1
+			},
+			{
+				"src": "build/img/single/3.jpg",
+				"size": 1
+			},
+			{
+				"src": "build/img/single/4.jpg",
+				"size": 1
+			},
+			{
+				"src": "build/img/single/5.jpg",
+				"size": 2
+			},
+			{
+				"src": "build/img/single/6.jpg",
+				"size": 2
+			},
+			{
+				"src": "build/img/single/7.jpg",
+				"size": 1
+			},
+			{
+				"src": "build/img/single/8.jpg",
+				"size": 3
+			},
+			{
+				"src": "build/img/single/9.jpg",
+				"size": 3
+			},
+			{
+				"src": "build/img/single/10.jpg",
+				"size": 1
+			}
+		],
+		"links": [
+			{
+				"title": "Facebook",
+				"url": "#"
+			},
+			{
+				"title": "Instagram",
+				"url": "#"
+			},
+			{
+				"title": "Pinterest",
+				"url": "#"
+			}
+		]
+	},
+	"about": {
+		"company": "Vox architects",
+		"contacts": {
+			"zip": "127015",
+			"city": "Moscow",
+			"address1": "Bolshaya Novodmitrovskaya 36/12",
+			"address2": "entrance 2, level 3",
+			"building": "FLACON DESIGN FACTORY",
+			"tel": "+74995798824",
+			"web": "vox-architects.com",
+			"email": "info@vox-architects.com",
+			"socials": [
+				{
+					"title": "Facebook",
+					"url": "#"
+				},
+				{
+					"title": "Instagram",
+					"url": "#"
+				},
+				{
+					"title": "Pinterest",
+					"url": "#"
+				}
+			]
+		},
+		"story": {
+			"primary": "Boris Voskoboynikov is the leader and the main architect of VOX ARCHITECTS. Boris Voskoboynikov, member of Moscow Union of Artists (MOSKH), author of study programs, ectures and master classes for Moscow Universities of architecture and design (MGHPA them Stroganov, Arch School MARCH, British Higher School of Art & Design and etc.).",
+			"secondary": "Boris Voskoboynikov is the leader and the main architect of VOX ARCHITECTS. Boris Voskoboynikov, member of Moscow Union of Artists (MOSKH), author of study programs, ectures and master classes for Moscow Universities of architecture and design (MGHPA them Stroganov, Arch School MARCH, British Higher School of Art & Design and etc.)."
+		},
+		"team": {
+			"primary": "VOX ARCHITECTS – is not only an architectural studio with the permanent highly qualified employees, it is a union of professionals and expert partners: graphic and industrial designers, specialists in furniture and equipment manufacture and design, lightning designers, engineers, technologists, constructors, landscape architects, specialists in branding, naming and corporate identity.",
+			"secondary": "VOX ARCHITECTS – is not only an architectural studio with the permanent highly qualified employees, it is a union of professionals and expert partners: graphic and industrial designers, specialists in furniture and equipment manufacture and design, lightning designers, engineers, technologists, constructors, landscape architects, specialists in branding, naming and corporate identity."
+		},
+		"press": [
+			"ISALONI",
+			"DOMUS",
+			"ELLE DECOR",
+			"ARCH DEILY",
+			"AD / ARCHITECTURAL DIGEST",
+			"STRELKA",
+			"1OO% DESIGN LONDON",
+			"WWW.ARCHI.RU",
+			"BRITISH HIGHER SCHOOL OF ART & DESIGN",
+			"PROJECT NEXT",
+			"SALON",
+			"TATLIN",
+			"ARCH MOSCOW",
+			"LOOK AT ME",
+			"MARСH / ARH SCHOOL",
+			"BEST OFFICE AWARDS",
+			"LA BIENNALE DI VENEZIA",
+			"DI ARCHITETTURA",
+			"МГХПА",
+			"INTERIA AWARDS",
+			"IDA",
+			"INTERNI"
+		],
+		"where": {
+			"primary": "Due to the great experience wide geography of realized projects VOX ARCHITECTS can lead the projects on distance and realize different scale",
+			"secondary": "Due to the great experience wide geography of realized projects VOX ARCHITECTS can lead the projects on distance and realize different scale"
+		}
+	},
+	"favorites": [
+		{
+			"img": "build/img/home/1.jpg"
+		},
+		{
+			"img": "build/img/home/2.jpg"
+		},
+		{
+			"img": "build/img/home/1.jpg"
+		},
+		{
+			"img": "build/img/home/2.jpg"
+		},
+		{
+			"img": "build/img/home/1.jpg"
+		},
+		{
+			"img": "build/img/home/2.jpg"
+		}
+	]
+}

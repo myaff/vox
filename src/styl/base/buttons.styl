@@ -1,0 +1,40 @@
+.btn {
+  display: inline-block;
+  line-height: 1;
+  border: 0;
+
+  {hover-focus-active} {
+    text-decoration: none;
+    outline: none;
+  }
+
+  &--plain {
+    size(1em);
+    background: transparent;
+    padding: 0;
+  }
+
+  &--default {
+    font: 600 24px/1 $font-base;
+    padding: 0;
+    flexy(center, center);
+
+    .icon {
+      font-size: 40px;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.readmore {
+  font: 24px/1.33 $font-base;
+  text-decoration: underline;
+}
+
+.btn-accordion {
+  transition: transform 0.3s;
+
+  .accordion.is-open & {
+    transform: rotate(-180deg);
+  }
+}

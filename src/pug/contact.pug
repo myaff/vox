@@ -1,0 +1,50 @@
+extends template
+
+prepend page
+  - var layout = 'contacts';
+  - var currentPage = 'contacts';
+  - var hasFooter = false;
+  - var pageTitle = false;
+  - var pageDesc = false;
+  - var pageImg = false;
+
+block content
+  .page(class="page--" + currentPage)
+    .contacts-page
+      #map.map
+      .contacts-page__content
+        .l-container
+          .l-flex
+            .l-col-6
+              .contacts-page__info
+                .contacts-page__title Get in contact
+                .contacts.address
+                  .contacts__item= about.contacts.zip + ', ' + about.contacts.city
+                  .contacts__item= about.contacts.address1
+                  .contacts__item= about.contacts.building
+                  .contacts__item= about.contacts.address2
+                .contacts.contact
+                  .contacts__item
+                    | t_ 
+                    a(href=`telto:${about.contacts.tel}`)= about.contacts.tel
+                  .contacts__item
+                    | w_ 
+                    a(href=`https://${about.contacts.web}`)= about.contacts.web
+                  .contacts__item
+                    | e_ 
+                    a(href=`mailto:${about.contacts.email}`)= about.contacts.email
+                .contacts.socials
+                  for item in about.contacts.socials
+                    .contacts__link-item
+                      a.contacts__link(href=item.url)= item.title
+            .l-col-6
+              .contacts-page__feedback
+                .contacts-page__title Write to us
+                .contacts-page__form
+                  .fieldset
+                    +fieldInput('name', 'Enter name', 'Name')
+                    +fieldInput('email', 'Enter email', 'Email')(type="email")
+                    +fieldTextarea('message', 'Write message...', 'Message')
+                  button.btn.btn--default
+                    .text Submit
+                    +icon('arrow-right')

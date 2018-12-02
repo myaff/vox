@@ -1,0 +1,20 @@
+extends template
+
+prepend page
+  - var layout = 'projects';
+  - var currentPage = 'projects';
+  - var hasFooter = false;
+  - var pageTitle = false;
+  - var pageDesc = false;
+  - var pageImg = false;
+
+block content
+  .page(class="page--" + currentPage)
+    .projects
+      for item in projects
+        .projects__item.project
+          a.project__link(href=item.url)
+            .project__img: img(src=item.img)
+            .project__info
+              .project__title !{item.title}
+              .project__desc !{item.desc}

@@ -1,0 +1,16 @@
+include ../mixins
+.header
+  .l-container
+    .header__content
+      .l-flex-middle-noBottom
+        .l-col-6
+          .header__logo
+            a(href="/")
+              +icon('logo')
+              .text Architects
+        .l-col-5
+          .header__text Urban design and landscape
+  .header__search
+      +fieldInput('search')
+        button.btn.btn--plain
+          +icon('loupe')

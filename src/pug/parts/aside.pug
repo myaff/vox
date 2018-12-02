@@ -1,0 +1,28 @@
+include ../mixins
+.aside
+  .aside__close
+    button.btn.btn--plain.btn-close-aside
+      +icon('x')
+  .aside__content
+    +asideMenu(navs.projects).aside__nav
+    .aside__contacts
+      .contacts
+        .contacts__title Address
+        .contacts__info
+          .contacts__item= about.contacts.zip + ', ' + about.contacts.city
+          .contacts__item= about.contacts.address1
+          .contacts__item= about.contacts.building
+          .contacts__item= about.contacts.address2
+          .contacts__item= about.company
+      .contacts
+        .contacts__title Contact
+        .contacts__info
+          .contacts__item
+            | T_ 
+            a(href=`telto:${about.contacts.tel}`)= about.contacts.tel
+          .contacts__item
+            | W_ 
+            a(href=`https://${about.contacts.web}`)= about.contacts.web
+          .contacts__item
+            | E_ 
+            a(href=`mailto:${about.contacts.email}`)= about.contacts.email

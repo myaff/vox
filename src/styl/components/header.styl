@@ -1,0 +1,63 @@
+.header {
+	fixed(0px, 0px);
+	right: 0;
+	z-index: 9;
+	background: $white;
+	color: $black;
+	padding-right: 90px;
+
+	a {
+		color: inherit;
+	}
+
+	&__content {
+		padding: 35px 0 40px;
+	}
+
+	&__logo {
+		transform: translateZ(0);
+
+		a {
+			flexy(flex-start, flex-end);
+		}
+
+		.icon {
+			size(120px, 40px);
+		}
+
+		.text {
+			margin-left: 2rem;
+			font: 300 18px/1 $font-base;
+			text-transform: uppercase;
+		}
+	}
+
+	&__text {
+		font: 300 18px/25px $font-base;
+		text-transform: uppercase;
+		padding-right: 12px;
+		border-right: 1px solid currentColor;
+		text-align: right;
+	}
+
+	&__search {
+		absolute(25px);
+		right: 25px;
+
+		.field {
+			&__input {
+				display: none;
+			}
+		}
+
+		.btn {
+			font-size: 40px;
+			padding: 0.25em;
+
+			.icon {
+				font-size: 0.5em;
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,85 @@
+.single {
+  &__img {
+    img {
+      display: block;
+      size(100%, auto);
+    }
+  }
+  &__info {
+    padding: 90px 0;
+    height: 300px;
+    overflow: hidden;
+  }
+  &__more {
+    padding-top: 1rem;
+
+    .btn {
+      font-size: 50px;
+    }
+  }
+  &__photos {
+    img {
+      display: block;
+      size(100%, auto);
+    }
+  }
+
+  &__title {
+    font: 600 60px/1 $font-base;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    font: 600 24px/1.33 $font-base;
+    text-decoration: underline;
+  }
+
+  &__team-text,
+  &__desc {
+    font: 600 24px/1.33 $font-base;
+  }
+}
+
+.photos {
+
+  &__grid {
+    flexy(space-between, stretch, wrap);
+  }
+
+  &__item {
+    margin-bottom: 90px;
+    flex: 0 0 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.size--1 {
+      flex-basis: 100%;
+    }
+    &.size--2 {
+      flex-basis: 50%;
+    }
+    &.size--3 {
+      flex-basis: calc((100% - 90px) / 2);
+    }
+  }
+}
+
+.props {
+
+  &__item {
+    font: 24px/1.33 $font-base;
+    margin: 0;
+  }
+  &__term {
+    display: inline;
+    font-weight: 600;
+  }
+  &__desc {
+    display: inline;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+  }
+}
