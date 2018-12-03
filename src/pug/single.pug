@@ -13,9 +13,9 @@ block content
     .single
       .single__img
         img(src=single.img, alt=single.title)
-      .single__info.accordion
+      .single__info
         .l-container
-          .l-flex-wrap
+          .l-flex
             .l-col-6
               .single__title !{single.title}
               .single__readmore
@@ -33,20 +33,22 @@ block content
                       dt.props__term !{item.name}: 
                       dd.props__desc !{item.value}
               .single__more
-                button.btn.btn--plain.btn-accordion
+                button.btn.btn--plain.btn-accordion(data-target="#accordion-single")
                   +icon('arrow-down')
-            .l-col-5
-              .single__desc
-                p !{single.desc}
-            .l-col-2(data-push-left="off-1")
-              .single__team-text Team
-            .l-col-4
-              .single__props
-                .props.props--secondary
-                  for item in single.props.secondary
-                    dl.props__item
-                      dt.props__term !{item.name}: 
-                      dd.props__desc !{item.value}
+          #accordion-single.accordion
+            .l-flex
+              .l-col-5
+                .single__desc
+                  p !{single.desc}
+              .l-col-2(data-push-left="off-1")
+                .single__team-text Team
+              .l-col-4
+                .single__props
+                  .props.props--secondary
+                    for item in single.props.secondary
+                      dl.props__item
+                        dt.props__term !{item.name}: 
+                        dd.props__desc !{item.value}
       .single__photos
         .photos__grid
           for item in single.photos

@@ -18,60 +18,67 @@ block content
               .section__img: img(src="build/img/about/1.jpg", alt="")
             .l-col-6
               .section__img: img(src="build/img/about/2.jpg", alt="")
-        .section__info.accordion
+        .section__info
           .l-container
-            .l-flex
-              .l-col-6
-                .section__heading
-                  .section__title Our story
-              .l-col-6
-                .section__content
+            .section__content
+              .section__icon
+                +icon('v')
+              .l-flex
+                .l-col-6
+                  .section__heading
+                    .section__title Our story
+                .l-col-6
                   .section__desc !{about.story.primary}
-                .section__more
-                  button.btn.btn--plain.btn-accordion
-                    +icon('arrow-down')
-              .l-col-6(data-push-left="off-6")
-                .section__content
-                  .section__desc !{about.story.secondary}
+                  .section__more
+                    button.btn.btn--plain.btn-accordion(data-target="#accordion-story")
+                      +icon('arrow-down')
+                .l-col-6(data-push-left="off-6")
+                  #accordion-story.accordion
+                    .section__desc !{about.story.secondary}
       .section.about__team
         .section__img: img(src="build/img/about/3.jpg", alt="")
-        .section__info.accordion
+        .section__info
           .l-container
-            .l-flex
-              .l-col-6
-                .section__heading
-                  .section__title Our team
-              .l-col-6
-                .section__content
+            .section__content
+              .section__icon
+                +icon('o')
+              .l-flex
+                .l-col-6
+                  .section__heading
+                    .section__title Our team
+                .l-col-6
                   .section__desc !{about.team.primary}
-                .section__more
-                  button.btn.btn--plain.btn-accordion
-                    +icon('arrow-down')
-              .l-col-6(data-push-left="off-6")
-                .section__content
-                  .section__desc !{about.team.secondary}
+                  .section__more
+                    button.btn.btn--plain.btn-accordion(data-target="#accordion-team")
+                      +icon('arrow-down')
+                .l-col-6(data-push-left="off-6")
+                  #accordion-team.accordion
+                    .section__desc !{about.team.secondary}
       .section.about__press
         .section__info
           .l-container
-            .section__title Press
-            .press
-              for item in about.press
-                .press__item= item
+            .section__content
+              .section__title Press
+              .press
+                for item in about.press
+                  .press__item= item
       .section.about__map
         #map.map
-        .section__info.accordion
+        .section__info
           .l-container
-            .l-flex
-              .l-col-6
-                .section__heading
-                  .section__title Where we work
-              .l-col-6
-                .section__content
+            .section__content
+              .section__icon
+                +icon('x')
+              .l-flex
+                .l-col-6
+                  .section__heading
+                    .section__title Where we work
+                .l-col-6
                   .section__desc !{about.where.primary}
-                .section__more
-                  button.btn.btn--plain.btn-accordion
-                    +icon('arrow-down')
-              .l-col-6(data-push-left="off-6")
-                .section__content
-                  .section__desc !{about.where.secondary}
+                  .section__more
+                    button.btn.btn--plain.btn-accordion(data-target="#accordion-map")
+                      +icon('arrow-down')
+                .l-col-6(data-push-left="off-6")
+                  #accordion-map.accordion
+                    .section__desc !{about.where.secondary}
 

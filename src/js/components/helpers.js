@@ -240,18 +240,11 @@ function init(){
     }
   });
 
-  let accordionInitialHeight;
   $('.btn-accordion').on('click', function() {
-    let accordion = $(this).closest('.accordion');
-    let accordionFinalHeight = accordion[0].scrollHeight;
-    if (accordion.hasClass('is-open')) {
-      accordion.animate({'height': accordionInitialHeight}, 500);
-    } else {
-      accordionInitialHeight = accordion.outerHeight();
-      accordion.animate({'height': accordionFinalHeight}, 500);
-    }
-    accordion.toggleClass('is-open');
-  })
+    let accordion = $($(this).data('target'));
+    $(this).toggleClass('is-open');
+    accordion.toggleClass('is-open').slideToggle(500);
+  });
   
   $(window).scroll($.debounce(250, true, function() {
     $('html').addClass('is-scrolling');

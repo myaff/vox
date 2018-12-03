@@ -7,18 +7,8 @@
       }
     }
 
-    &__info {
+    &__content {
       padding: 70px 0;
-      overflow: hidden;
-
-      &::before {
-        content: '';
-        display: block;
-        size(100%, 70px);
-        absolute(0, 0px, 0px);
-        background: $white;
-        z-index: 2;
-      }
     }
 
     &__title {
@@ -44,24 +34,30 @@
 
     &__more {
       padding-top: 1rem;
+    }
+  }
 
-      .btn {
-        font-size: 50px;
+  &__story .section {
+    &__icon {
+      absolute(120px, -75px);
+
+      .icon {
+        size(240px);
       }
     }
   }
 
-  &__story .accordion {
-    height: 430px;
-  }
+  &__team .section {
+    &__content {
+      padding-bottom: 30px;
+      border-bottom: 1px solid $black;
+    }
+    &__icon {
+      absolute(-40px, 440px);
 
-  &__team .accordion {
-    height: 390px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid $black;
-
-    &::before {
-      height: 30px;
+      .icon {
+        size(240px);
+      }
     }
   }
 
@@ -77,12 +73,16 @@
       background: $grey-light;
     }
 
-    .accordion {
-      height: 510px;
-      padding-bottom: 280px;
+    .section {
+      &__content {
+        min-height: 510px;
+      }
+      &__icon {
+        absolute(0, 0px, 0px);
 
-      &::before {
-        height: 280px;
+        .icon {
+          size(210px, 240px);
+        }
       }
     }
   }
