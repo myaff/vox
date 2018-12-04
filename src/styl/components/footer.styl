@@ -1,9 +1,22 @@
 .footer {
   width: 100%;
-  padding: 70px 0;
+  padding: vw(70) 0;
   background: $grey;
   color: $white;
   z-index: 2;
+
+  @media $display-breakpoints.sm-and-down {
+    padding: vw(80, 480) 0 vw(60, 480);
+  }
+
+  [class*="l-flex"] {
+    align-items: flex-end;
+
+    @media $display-breakpoints.sm-and-down {
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+  }
 
   a {
     color: inherit;
@@ -11,25 +24,52 @@
 
   &__logo {
     .icon {
-      size(120px, 40px);
+      size(vw(120), vw(40));
+
+      @media $display-breakpoints.sm-and-down {
+        size(vw(120, 480), vw(40, 480));
+      }
     }
   }
 
   &__link {
-    font: 600 24px/1.33 $font-base;
+    font: 600 vw(24)/1.33 $font-base;
     text-decoration: underline;
+
+    @media $display-breakpoints.sm-and-down {
+      font-size: vw(24, 480);
+    }
   }
 
   .contacts {
-    font: 24px/1.33 $font-base;
+    font: vw(24)/1.33 $font-base;
+
+    @media $display-breakpoints.sm-and-down {
+      font-size: vw(24, 480);
+    }
 
     &__title {
       text-transform: uppercase;
-      margin-bottom: 165px;
+      margin-bottom: vw(165);
+
+      @media $display-breakpoints.sm-and-down {
+        margin-bottom: vw(40, 480);
+      }
     }
   }
 
   .contact .contacts__item {
     font-weight: 300;
+  }
+
+  .address {
+    @media $display-breakpoints.sm-and-down {
+      margin-top: vw(30, 480);
+    }
+  }
+  .contact {
+    @media $display-breakpoints.sm-and-down {
+      margin-top: vw(60, 480);
+    }
   }
 }

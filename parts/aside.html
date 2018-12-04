@@ -8,7 +8,7 @@
     </button>
   </div>
   <div class="aside__content">
-    <nav class="nav aside__nav">
+    <nav class="nav aside__nav l-hidden-sm-down">
       <ul class="nav__list">
         <li class="nav__item"><a class="nav__link" href="projects.html">All projects</a><span class="nav__total">105</span></li>
         <li class="nav__item"><a class="nav__link" href="projects.html">Architecture</a><span class="nav__total">18</span></li>
@@ -18,7 +18,23 @@
         <li class="nav__item"><a class="nav__link" href="projects.html">Residential</a><span class="nav__total">25</span></li>
       </ul>
     </nav>
-    <div class="aside__contacts">
+    <nav class="nav aside__nav l-hidden-md-up">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="about.html">about</a></li>
+        <li class="nav__item"><span class="nav__link" href="#">projects</span>
+          <ul class="subnav__list">
+            <li class="subnav__item"><a class="subnav__link" href="projects.html">All projects</a></li>
+            <li class="subnav__item"><a class="subnav__link" href="projects.html">Architecture</a></li>
+            <li class="subnav__item"><a class="subnav__link" href="projects.html">Urban design and&nbsp;landscape</a></li>
+            <li class="subnav__item"><a class="subnav__link" href="projects.html">Commercial</a></li>
+            <li class="subnav__item"><a class="subnav__link" href="projects.html">Public space</a></li>
+            <li class="subnav__item"><a class="subnav__link" href="projects.html">Residential</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <div class="aside__contacts l-hidden-sm-down">
       <div class="contacts">
         <div class="contacts__title">Address</div>
         <div class="contacts__info">
@@ -36,6 +52,18 @@
           <div class="contacts__item">W_ <a href="https://vox-architects.com">vox-architects.com</a></div>
           <div class="contacts__item">E_ <a href="mailto:info@vox-architects.com">info@vox-architects.com</a></div>
         </div>
+      </div>
+    </div>
+    <div class="aside__search l-hidden-md-up">
+      <button class="btn btn--plain btn-search">
+        <svg class="icon">
+          <use xlink:href="#loupe"></use>
+        </svg>
+      </button>
+      <div class="field form__field">
+        <label class="field__label" for="mobile-search">
+          <input class="field__input" id="mobile-search" type="search"/>
+        </label>
       </div>
     </div>
   </div>

@@ -4,8 +4,9 @@ include ../mixins
     button.btn.btn--plain.btn-close-aside
       +icon('x')
   .aside__content
-    +asideMenu(navs.projects).aside__nav
-    .aside__contacts
+    +asideMenu(navs.projects).aside__nav.l-hidden-sm-down
+    +asideMenuFull(navs.main, navs.projects).aside__nav.l-hidden-md-up
+    .aside__contacts.l-hidden-sm-down
       .contacts
         .contacts__title Address
         .contacts__info
@@ -26,3 +27,7 @@ include ../mixins
           .contacts__item
             | E_ 
             a(href=`mailto:${about.contacts.email}`)= about.contacts.email
+    .aside__search.l-hidden-md-up
+      button.btn.btn--plain.btn-search
+        +icon('loupe')
+      +fieldInput('mobile-search')(type="search")

@@ -15,18 +15,27 @@
   }
 
   &--default {
-    font: 600 24px/1 $font-base;
+    font: 600 vw(24)/1 $font-base;
     padding: 0;
     flexy(center, center);
 
+    @media $display-breakpoints.sm-and-down {
+      font-size: vw(24, 480);
+    }
+
     .icon {
-      font-size: 40px;
-      margin-left: 1rem;
+      font-size: vw(40);
+      margin-left: vw(16);
+
+      @media $display-breakpoints.sm-and-down {
+        font-size: vw(40, 480);
+        margin-left: vw(16, 480);
+      }
     }
   }
 }
 
 .readmore {
-  font: 24px/1.33 $font-base;
+  font: vw(24)/1.33 $font-base;
   text-decoration: underline;
 }

@@ -1,19 +1,19 @@
 .sidebar {
   fixed(0px);
   right: 0;
-  size(90px, 100%);
+  size(vw(90), 100%);
   z-index: 2;
   background $white;
   color: $black;
 
   &__content {
-    padding-top: 125px;
+    padding-top: vw(125);
   }
 
   &__nav {
     transform: rotate(-90deg) translate(-100%, 0%);
     transform-origin: left top;
-    size(490px, 90px);
+    size(vw(490), vw(90));
 
     .nav {
       &__list {
@@ -23,14 +23,14 @@
         flexy(flex-start, flex-start);
       }
       &__item {
-        margin: 0 40px;
+        margin: 0 vw(40);
         padding: 0;
       }
       &__link {
         display: block;
         relative();
-        padding: 36px 10px;
-        font: 300 18px/1 $font-base;
+        padding: vw(36) vw(10);
+        font: 300 vw(18)/1 $font-base;
         text-transform: uppercase;
 
         &::before {

@@ -22,20 +22,29 @@
         <div class="l-container">
           <div class="header__content">
             <div class="l-flex-middle-noBottom">
-              <div class="l-col-6">
+              <div class="l-col-6_sm-8">
                 <div class="header__logo"><a href="/">
                           <svg class="icon">
                             <use xlink:href="#logo"></use>
                           </svg>
                     <div class="text">Architects</div></a></div>
               </div>
-              <div class="l-col-5">
+              <div class="l-col-5 l-hidden-sm-down">
                 <div class="header__text">Urban design and landscape</div>
+              </div>
+              <div class="l-col-4 l-hidden-md-up">
+                <div class="header__btn">
+                  <button class="btn btn--plain btn-open-aside btn-burger">
+                          <svg class="icon">
+                            <use xlink:href="#burger"></use>
+                          </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="header__search">
+        <div class="header__search l-hidden-sm-down">
                 <div class="field form__field">
                   <label class="field__label" for="search">
                     <input class="field__input" id="search">
@@ -48,7 +57,7 @@
                 </div>
         </div>
       </div>
-      <div class="sidebar">
+      <div class="sidebar l-hidden-sm-down">
         <div class="sidebar__content">
                 <nav class="nav sidebar__nav">
                   <ul class="nav__list">
@@ -64,29 +73,45 @@
           <div class="section about__story">
             <div class="section__imgs">
               <div class="l-flex-noGutter">
-                <div class="l-col-6">
+                <div class="l-col-6_sm-12">
                   <div class="section__img"><img src="build/img/about/1.jpg" alt=""></div>
                 </div>
-                <div class="l-col-6">
+                <div class="l-col-0_sm-12 l-hidden-md-up">
+                  <div class="section__info">
+                    <div class="section__icon">
+                            <svg class="icon">
+                              <use xlink:href="#v"></use>
+                            </svg>
+                    </div>
+                    <div class="l-container">
+                      <div class="section__content">
+                        <div class="section__heading">
+                          <div class="section__title">Our story</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="l-col-6_sm-12">
                   <div class="section__img"><img src="build/img/about/2.jpg" alt=""></div>
                 </div>
               </div>
             </div>
             <div class="section__info">
+              <div class="section__icon l-hidden-sm-down">
+                      <svg class="icon">
+                        <use xlink:href="#v"></use>
+                      </svg>
+              </div>
               <div class="l-container">
                 <div class="section__content">
-                  <div class="section__icon">
-                          <svg class="icon">
-                            <use xlink:href="#v"></use>
-                          </svg>
-                  </div>
                   <div class="l-flex">
-                    <div class="l-col-6">
+                    <div class="l-col-6_sm-0">
                       <div class="section__heading">
                         <div class="section__title">Our story</div>
                       </div>
                     </div>
-                    <div class="l-col-6">
+                    <div class="l-col-6_sm-12">
                       <div class="section__desc">Boris Voskoboynikov is the leader and the main architect of VOX ARCHITECTS. Boris Voskoboynikov, member of Moscow Union of Artists (MOSKH), author of study programs, ectures and master classes for Moscow Universities of architecture and design (MGHPA them Stroganov, Arch School MARCH, British Higher School of Art & Design and etc.).</div>
                       <div class="section__more">
                         <button class="btn btn--plain btn-accordion" data-target="#accordion-story">
@@ -96,7 +121,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="l-col-6" data-push-left="off-6">
+                    <div class="l-col-6_sm-12" data-push-left="off-6_sm-0">
                       <div class="accordion" id="accordion-story">
                         <div class="section__desc">Boris Voskoboynikov is the leader and the main architect of VOX ARCHITECTS. Boris Voskoboynikov, member of Moscow Union of Artists (MOSKH), author of study programs, ectures and master classes for Moscow Universities of architecture and design (MGHPA them Stroganov, Arch School MARCH, British Higher School of Art & Design and etc.).</div>
                       </div>
@@ -107,22 +132,37 @@
             </div>
           </div>
           <div class="section about__team">
-            <div class="section__img"><img src="build/img/about/3.jpg" alt=""></div>
+            <div class="section__img l-hidden-sm-down"><img src="build/img/about/3.jpg" alt=""></div>
+            <div class="section__info l-hidden-md-up">
+              <div class="l-container">
+                <div class="section__heading">
+                  <div class="section__title">Our team</div>
+                </div>
+              </div>
+              <div class="section__img"><img src="build/img/about/3-m.jpg" alt=""></div>
+              <div class="l-container">
+                <div class="section__icon">
+                        <svg class="icon">
+                          <use xlink:href="#o"></use>
+                        </svg>
+                </div>
+              </div>
+            </div>
             <div class="section__info">
               <div class="l-container">
                 <div class="section__content">
-                  <div class="section__icon">
+                  <div class="section__icon l-hidden-sm-down">
                           <svg class="icon">
                             <use xlink:href="#o"></use>
                           </svg>
                   </div>
                   <div class="l-flex">
-                    <div class="l-col-6">
+                    <div class="l-col-6_sm-0">
                       <div class="section__heading">
                         <div class="section__title">Our team</div>
                       </div>
                     </div>
-                    <div class="l-col-6">
+                    <div class="l-col-6_sm-12">
                       <div class="section__desc">VOX ARCHITECTS – is not only an architectural studio with the permanent highly qualified employees, it is a union of professionals and expert partners: graphic and industrial designers, specialists in furniture and equipment manufacture and design, lightning designers, engineers, technologists, constructors, landscape architects, specialists in branding, naming and corporate identity.</div>
                       <div class="section__more">
                         <button class="btn btn--plain btn-accordion" data-target="#accordion-team">
@@ -132,7 +172,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="l-col-6" data-push-left="off-6">
+                    <div class="l-col-6_sm-12" data-push-left="off-6_sm-0">
                       <div class="accordion" id="accordion-team">
                         <div class="section__desc">VOX ARCHITECTS – is not only an architectural studio with the permanent highly qualified employees, it is a union of professionals and expert partners: graphic and industrial designers, specialists in furniture and equipment manufacture and design, lightning designers, engineers, technologists, constructors, landscape architects, specialists in branding, naming and corporate identity.</div>
                       </div>
@@ -176,6 +216,13 @@
             </div>
           </div>
           <div class="section about__map">
+            <div class="section__info l-hidden-md-up">
+              <div class="l-container">
+                <div class="section__heading">
+                  <div class="section__title">Where we work</div>
+                </div>
+              </div>
+            </div>
             <div class="map" id="map"></div>
             <div class="section__info">
               <div class="l-container">
@@ -186,12 +233,12 @@
                           </svg>
                   </div>
                   <div class="l-flex">
-                    <div class="l-col-6">
+                    <div class="l-col-6_sm-0">
                       <div class="section__heading">
                         <div class="section__title">Where we work</div>
                       </div>
                     </div>
-                    <div class="l-col-6">
+                    <div class="l-col-6_sm-12">
                       <div class="section__desc">Due to the great experience wide geography of realized projects VOX ARCHITECTS can lead the projects on distance and realize different scale</div>
                       <div class="section__more">
                         <button class="btn btn--plain btn-accordion" data-target="#accordion-map">
@@ -201,7 +248,7 @@
                         </button>
                       </div>
                     </div>
-                    <div class="l-col-6" data-push-left="off-6">
+                    <div class="l-col-6_sm-12" data-push-left="off-6_sm-0">
                       <div class="accordion" id="accordion-map">
                         <div class="section__desc">Due to the great experience wide geography of realized projects VOX ARCHITECTS can lead the projects on distance and realize different scale</div>
                       </div>
@@ -216,21 +263,21 @@
       <div class="footer">
         <div class="l-container">
           <div class="footer__content">
-            <div class="l-flex-bottom-noBottom">
-              <div class="l-col-3">
+            <div class="l-flex-noBottom">
+              <div class="l-col-3_sm-8">
                 <div class="footer__logo"><a href="/">
                           <svg class="icon">
                             <use xlink:href="#logo"></use>
                           </svg></a></div>
               </div>
-              <div class="l-col-3">
+              <div class="l-col-3_sm-4">
                 <div class="footer__links">
                   <div class="footer__link-item"><a class="footer__link" href="#">Facebook</a></div>
                   <div class="footer__link-item"><a class="footer__link" href="#">Instagram</a></div>
                   <div class="footer__link-item"><a class="footer__link" href="#">Pinterest</a></div>
                 </div>
               </div>
-              <div class="l-col-3">
+              <div class="l-col-3_sm-12">
                 <div class="footer__contacts contacts address">
                   <div class="contacts__title">Address</div>
                   <div class="contacts__info">
@@ -240,7 +287,7 @@
                   </div>
                 </div>
               </div>
-              <div class="l-col-3">
+              <div class="l-col-3_sm-12">
                 <div class="footer__contacts contacts contact">
                   <div class="contacts__title">Contact</div>
                   <div class="contacts__info">
@@ -263,7 +310,7 @@
           </button>
         </div>
         <div class="aside__content">
-                <nav class="nav aside__nav">
+                <nav class="nav aside__nav l-hidden-sm-down">
                   <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="projects.html">All projects</a><span class="nav__total">105</span></li>
                     <li class="nav__item"><a class="nav__link" href="projects.html">Architecture</a><span class="nav__total">18</span></li>
@@ -273,7 +320,23 @@
                     <li class="nav__item"><a class="nav__link" href="projects.html">Residential</a><span class="nav__total">25</span></li>
                   </ul>
                 </nav>
-          <div class="aside__contacts">
+                <nav class="nav aside__nav l-hidden-md-up">
+                  <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="about.html">about</a></li>
+                    <li class="nav__item"><span class="nav__link" href="#">projects</span>
+                      <ul class="subnav__list">
+                        <li class="subnav__item"><a class="subnav__link" href="projects.html">All projects</a></li>
+                        <li class="subnav__item"><a class="subnav__link" href="projects.html">Architecture</a></li>
+                        <li class="subnav__item"><a class="subnav__link" href="projects.html">Urban design and&nbsp;landscape</a></li>
+                        <li class="subnav__item"><a class="subnav__link" href="projects.html">Commercial</a></li>
+                        <li class="subnav__item"><a class="subnav__link" href="projects.html">Public space</a></li>
+                        <li class="subnav__item"><a class="subnav__link" href="projects.html">Residential</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="contact.html">contact</a></li>
+                  </ul>
+                </nav>
+          <div class="aside__contacts l-hidden-sm-down">
             <div class="contacts">
               <div class="contacts__title">Address</div>
               <div class="contacts__info">
@@ -292,6 +355,18 @@
                 <div class="contacts__item">E_ <a href="mailto:info@vox-architects.com">info@vox-architects.com</a></div>
               </div>
             </div>
+          </div>
+          <div class="aside__search l-hidden-md-up">
+            <button class="btn btn--plain btn-search">
+                    <svg class="icon">
+                      <use xlink:href="#loupe"></use>
+                    </svg>
+            </button>
+                  <div class="field form__field">
+                    <label class="field__label" for="mobile-search">
+                      <input class="field__input" id="mobile-search" type="search">
+                    </label>
+                  </div>
           </div>
         </div>
       </div>

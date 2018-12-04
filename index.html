@@ -22,20 +22,29 @@
         <div class="l-container">
           <div class="header__content">
             <div class="l-flex-middle-noBottom">
-              <div class="l-col-6">
+              <div class="l-col-6_sm-8">
                 <div class="header__logo"><a href="/">
                           <svg class="icon">
                             <use xlink:href="#logo"></use>
                           </svg>
                     <div class="text">Architects</div></a></div>
               </div>
-              <div class="l-col-5">
+              <div class="l-col-5 l-hidden-sm-down">
                 <div class="header__text">Urban design and landscape</div>
+              </div>
+              <div class="l-col-4 l-hidden-md-up">
+                <div class="header__btn">
+                  <button class="btn btn--plain btn-open-aside btn-burger">
+                          <svg class="icon">
+                            <use xlink:href="#burger"></use>
+                          </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="header__search">
+        <div class="header__search l-hidden-sm-down">
                 <div class="field form__field">
                   <label class="field__label" for="search">
                     <input class="field__input" id="search">
@@ -48,7 +57,7 @@
                 </div>
         </div>
       </div>
-      <div class="sidebar">
+      <div class="sidebar l-hidden-sm-down">
         <div class="sidebar__content">
                 <nav class="nav sidebar__nav">
                   <ul class="nav__list">
@@ -90,7 +99,7 @@
           </button>
         </div>
         <div class="aside__content">
-                <nav class="nav aside__nav">
+                <nav class="nav aside__nav l-hidden-sm-down">
                   <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="projects.html">All projects</a><span class="nav__total">105</span></li>
                     <li class="nav__item"><a class="nav__link" href="projects.html">Architecture</a><span class="nav__total">18</span></li>
@@ -100,7 +109,23 @@
                     <li class="nav__item"><a class="nav__link" href="projects.html">Residential</a><span class="nav__total">25</span></li>
                   </ul>
                 </nav>
-          <div class="aside__contacts">
+                <nav class="nav aside__nav l-hidden-md-up">
+                  <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="about.html">about</a></li>
+                    <li class="nav__item"><span class="nav__link" href="#">projects</span>
+                      <ul class="subnav__list">
+                        <li class="subnav__item"><a class="subnav__link" href="projects.html">All projects</a></li>
+                        <li class="subnav__item"><a class="subnav__link" href="projects.html">Architecture</a></li>
+                        <li class="subnav__item"><a class="subnav__link" href="projects.html">Urban design and&nbsp;landscape</a></li>
+                        <li class="subnav__item"><a class="subnav__link" href="projects.html">Commercial</a></li>
+                        <li class="subnav__item"><a class="subnav__link" href="projects.html">Public space</a></li>
+                        <li class="subnav__item"><a class="subnav__link" href="projects.html">Residential</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="contact.html">contact</a></li>
+                  </ul>
+                </nav>
+          <div class="aside__contacts l-hidden-sm-down">
             <div class="contacts">
               <div class="contacts__title">Address</div>
               <div class="contacts__info">
@@ -119,6 +144,18 @@
                 <div class="contacts__item">E_ <a href="mailto:info@vox-architects.com">info@vox-architects.com</a></div>
               </div>
             </div>
+          </div>
+          <div class="aside__search l-hidden-md-up">
+            <button class="btn btn--plain btn-search">
+                    <svg class="icon">
+                      <use xlink:href="#loupe"></use>
+                    </svg>
+            </button>
+                  <div class="field form__field">
+                    <label class="field__label" for="mobile-search">
+                      <input class="field__input" id="mobile-search" type="search">
+                    </label>
+                  </div>
           </div>
         </div>
       </div>

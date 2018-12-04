@@ -2,24 +2,24 @@ include ../mixins
 .footer
   .l-container
     .footer__content
-      .l-flex-bottom-noBottom
-        .l-col-3
+      .l-flex-noBottom
+        .l-col-3_sm-8
           .footer__logo
             a(href="/")
               +icon('logo')
-        .l-col-3
+        .l-col-3_sm-4
           .footer__links
             for item in about.contacts.socials
               .footer__link-item
                 a.footer__link(href=item.url)= item.title
-        .l-col-3
+        .l-col-3_sm-12
           .footer__contacts.contacts.address
             .contacts__title Address
             .contacts__info
               .contacts__item= about.contacts.zip + ', ' + about.contacts.city
               .contacts__item= about.contacts.address1
               .contacts__item= about.contacts.building
-        .l-col-3
+        .l-col-3_sm-12
           .footer__contacts.contacts.contact
             .contacts__title Contact
             .contacts__info

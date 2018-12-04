@@ -1,30 +1,44 @@
 .field {
   
   & + & {
-    margin-top: 30px;
+    margin-top: vw(30);
+
+    @media $display-breakpoints.sm-and-down {
+      margin-top: vw(30, 480);
+    }
   }
 
   &__input {
     display: block;
     width: 100%;
-    font: 300 24px/1 $font-base;
-    height: 57px;
-    padding: 16px 0;
+    font: 300 vw(24)/1 $font-base;
+    height: calc(2.9167vw + 1px);
+    padding: vw(16) 0;
     border: 0;
     border-bottom: 1px solid $black;
     box-sizing: border-box;
     box-shadow: none;
     background: transparent;
 
+    @media $display-breakpoints.sm-and-down {
+      font-size: vw(24, 480);
+      height: calc(11.667vw + 1px);
+      padding: vw(16, 480) 0;
+    }
+
     {hover-focus-active} {
       outline: none;
     }
 
     textarea& {
-      min-height: 57px;
+      min-height: calc(2.9167vw + 1px);
       width: 100%;
       min-width: 100%;
       max-width: 100%;
+
+      @media $display-breakpoints.sm-and-down {
+        min-height: calc(11.667 + 1px);
+      }
     }
   }
 
@@ -34,18 +48,28 @@
   }
 
   &__label-text {
-    font: 600 24px/1.33 $font-base;
+    font: 600 vw(24)/1.33 $font-base;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: vw(10);
+
+    @media $display-breakpoints.sm-and-down {
+      font-size: vw(24, 480);
+      margin-bottom: 0;
+    }
   }
 
   &__placeholder {
-    font: 300 24px/1 $font-base;
-    padding: 16px 0;
+    font: 300 vw(24)/1 $font-base;
+    padding: vw(16) 0;
     absolute(0px, 0px);
     color: $grey-light;
     cursor: text;
     transition: opacity 0.3s, transform 0.3s;
+
+    @media $display-breakpoints.sm-and-down {
+      font-size: vw(24, 480);
+      padding: vw(16, 480) 0;
+    }
 
     ^[0]__input:focus ~ &,
     ^[0].has-focus &,
@@ -57,9 +81,14 @@
 }
 
 .fieldset {
-  min-height: 510px;
+  min-height: vw(510);
   border-bottom: 1px solid currentColor;
-  margin-bottom: 70px;
+  margin-bottom: vw(70);
+
+  @media $display-breakpoints.sm-and-down {
+    max-width: vw(400, 480);
+    margin-bottom: vw(50, 480);
+  }
 }
 
 .flow-textarea {
@@ -67,12 +96,17 @@
   resize: none;
 
   &-example {
-    font: 300 24px/1 $font-base;
-    padding: 16px 0;
+    font: 300 vw(24)/1 $font-base;
+    padding: vw(16) 0;
     absolute(100%, 0px);
     width: 100%;
     z-index: -100;
     opacity: 0;
+
+    @media $display-breakpoints.sm-and-down {
+      font-size: vw(24, 480);
+      padding: vw(16, 480) 0;
+    }
   }
   &-label {
     overflow: hidden;

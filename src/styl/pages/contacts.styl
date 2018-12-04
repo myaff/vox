@@ -1,39 +1,68 @@
 .contacts-page {
   .map {
-    size(100%, 830px);
-    background: $grey-light;
+    size(100%, vw(830));
+    background: $grey-lighter;
+
+    @media $display-breakpoints.sm-and-down {
+      height: vw(340, 480);
+    }
   }
 
   &__content {
-    padding: 80px 0;
+    padding: vw(80) 0;
+
+    @media $display-breakpoints.sm-and-down {
+      padding: vw(48, 480) 0;
+    }
   }
 
   &__title {
-    font: 600 32px/0.8 $font-base;
+    font: 600 vw(32)/0.8 $font-base;
     text-transform: uppercase;
     display: inline-block;
     relative();
     padding-right: 0.5em;
-    margin-bottom: 80px;
+    margin-bottom: vw(80);
+
+    @media $display-breakpoints.sm-and-down {
+      font-size: vw(32, 480);
+      margin: vw(24, 480) 0 vw(48, 480);
+    }
 
     &::after {
       content: '';
       display: block;
-      size(140px, 1px);
+      size(vw(140), 1px);
       absolute(0, 100%, 0px);
       background: currentColor;
+
+      @media $display-breakpoints.sm-and-down {
+        width: vw(125, 480);
+      }
     }
   }
 
   .contacts {
     margin-top: 100px;
 
+    @media $display-breakpoints.sm-and-down {
+      margin: 0 0 vw(40, 480);
+    }
+
     &__item {
-      font: 300 24px/1.33 $font-base;
+      font: 300 vw(24)/1.33 $font-base;
+
+      @media $display-breakpoints.sm-and-down {
+        font-size: vw(24, 480);
+      }
     }
     &__link-item {
-      font: 600 24px/1.33 $font-base;
+      font: 600 vw(24)/1.33 $font-base;
       text-decoration: underline;
+
+      @media $display-breakpoints.sm-and-down {
+        font-size: vw(24, 480);
+      }
     }
   }
 }

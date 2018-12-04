@@ -1,28 +1,53 @@
 .carousel {
   &--default {
-    size(100%, calc(100vh - 115px));
+    size(100%, calc(100vh - 6vw));
+
+    @media $display-breakpoints.sm-and-down {
+      height: calc(100vh - 20.83vw);
+    }
 
     .owl-stage-outer {
       size(100%);
     }
+    .owl-stage {
+      height: 100%;
+    }
     .owl-item {
+      height: 100%;
+      overflow: hidden;
+
+      .item,
+      .item-img {
+        height: 100%;
+      }
       img {
         display: block;
-        size(100%, auto);
+        //size(100%, auto);
+        size(auto, 100%);
+        absolute-center();
       }
     }
     .owl-dots {
       absolute(0, 0px);
-      bottom: 60px;
+      bottom: vw(60);
       width: 100%;
       flexy(center, center);
       z-index: 2;
 
+      @media $display-breakpoints.sm-and-down {
+        bottom: vw(40, 480);
+      }
+
       .owl-dot {
-        size(2px, 40px);
-        margin: 0 9px;
+        size(2px, vw(40));
+        margin: 0 vw(9);
         background: $white;
         transition: all 0.3s;
+
+        @media $display-breakpoints.sm-and-down {
+          size(vw(2, 480), vw(40, 480));
+          margin: 0 vw(9, 480);
+        }
         
         &.active {
           transform: scaleX(4);

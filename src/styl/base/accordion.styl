@@ -3,8 +3,12 @@
 }
 
 .btn-accordion {
-  font-size: 50px;
+  font-size: vw(50);
   transition: transform 0.3s;
+
+  @media $display-breakpoints.sm-and-down {
+    font-size: vw(40, 480);
+  }
 
   &.is-open {
     transform: rotate(-180deg);

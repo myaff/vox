@@ -22,16 +22,6 @@ body {
   min-width: ($container-widths.min + $grid-gutter);
   max-width: ($container-widths.max + $grid-gutter);
   padding: 0 ($grid-gutter / 2);
-  //padding: 0 2rem;
-
-  &-fluid {
-    relative();
-    margin-right: auto
-    margin-left: auto
-    width: 100%;
-    padding: 0 ($grid-gutter / 2);
-    max-width: 117rem;
-  }
 }
 
 .layout {
@@ -44,8 +34,13 @@ body {
     flex-grow: 1;
     opacity: 1;
     width: 100%;
-    padding-right: 90px;
-    padding-top: 115px;
+    padding-right: vw(90);
+    padding-top: vw(115);
+
+    @media $display-breakpoints.sm-and-down {
+      padding-top: vw(100, 480);
+      padding-right: 0;
+    }
   }
 
 }

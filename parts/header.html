@@ -3,20 +3,29 @@
   <div class="l-container">
     <div class="header__content">
       <div class="l-flex-middle-noBottom">
-        <div class="l-col-6">
+        <div class="l-col-6_sm-8">
           <div class="header__logo"><a href="/">
               <svg class="icon">
                 <use xlink:href="#logo"></use>
               </svg>
               <div class="text">Architects</div></a></div>
         </div>
-        <div class="l-col-5">
+        <div class="l-col-5 l-hidden-sm-down">
           <div class="header__text">Urban design and landscape</div>
+        </div>
+        <div class="l-col-4 l-hidden-md-up">
+          <div class="header__btn">
+            <button class="btn btn--plain btn-open-aside btn-burger">
+              <svg class="icon">
+                <use xlink:href="#burger"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="header__search">
+  <div class="header__search l-hidden-sm-down">
     <div class="field form__field">
       <label class="field__label" for="search">
         <input class="field__input" id="search"/>

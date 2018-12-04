@@ -24,6 +24,21 @@ mixin asideMenu(menuList)
 					a.nav__link(href=item.url) !{item.title}
 					span.nav__total= item.total
 
+mixin asideMenuFull(menuList, submenuList)
+	nav&attributes(attributes).nav
+		ul.nav__list
+			for item in menuList
+				if item.key === 'projects'
+					li.nav__item
+						span.nav__link(href=item.url, class=(item.key === currentPage || item.key === 'projects' & currentPage === 'single') ? 'active' : '') !{item.title}
+						ul.subnav__list
+							each subitem in submenuList
+								li.subnav__item
+									a.subnav__link(href=subitem.url) !{subitem.title}
+				else
+					li.nav__item
+						a.nav__link(href=item.url) !{item.title}
+
 mixin video(modalID, videoURL, poster)
 	.video__wrapper
 		div&attributes(attributes).video

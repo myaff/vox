@@ -226,20 +226,27 @@ for $mq-key, $mq-value in $gl-mq-list {
 }
 
 
-for $mq-key, $mq-value in $gl-mq-clear-list {
+for $mq-key, $mq-value in $gl-mq-list {
   @media $mq-value { //_{$mq-key}
     [{$gl-attributeName}*={$gl-gridName}] {
-      // > :not([{$gl-attributeName}*=_{$mq-key}-0]) {
-      //   display: block;
-      // }
-      
-      // &:not([{$gl-attributeName}*=_{$mq-key}-0]) {
-      //   display: flex;
-      // }
+      > :not([{$gl-attributeName}*=_{$mq-key}-0]) {
+        display: block;
+      }
+
+      &:not([{$gl-attributeName}*=_{$mq-key}-0]) {
+        display: flex;
+      }
       
       >[{$gl-attributeName}*=_{$mq-key}-0],
       &[{$gl-attributeName}*=-equalHeight] > [{$gl-attributeName}*=_{$mq-key}-0] {
-        display: none;
+        display: none!important;
+      }
+
+      >[{$gl-attributeName}*=_{$mq-key}-first] {
+        order: -1;
+      }
+      >[{$gl-attributeName}*=_{$mq-key}-last] {
+        order: 1;
       }
     }
   }

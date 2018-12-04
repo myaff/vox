@@ -4,14 +4,22 @@
 	z-index: 9;
 	background: $white;
 	color: $black;
-	padding-right: 90px;
+	padding-right: vw(90);
+
+	@media $display-breakpoints.sm-and-down {
+		padding-right: 0;
+	}
 
 	a {
 		color: inherit;
 	}
 
 	&__content {
-		padding: 35px 0 40px;
+		padding: vw(35) 0 vw(40);
+
+		@media $display-breakpoints.sm-and-down {
+			padding: vw(30, 480) 0;
+		}
 	}
 
 	&__logo {
@@ -22,27 +30,37 @@
 		}
 
 		.icon {
-			size(120px, 40px);
+			size(vw(120), vw(40));
+
+			@media $display-breakpoints.sm-and-down {
+				size(vw(120, 480), vw(40, 480));
+			}
 		}
 
 		.text {
-			margin-left: 2rem;
-			font: 300 18px/1 $font-base;
+			margin-left: vw(30);
+			font: 300 vw(18)/1 $font-base;
 			text-transform: uppercase;
+
+			@media $display-breakpoints.sm-and-down {
+				margin-left: vw(30, 480);
+				font-size: vw(18, 480);
+			}
 		}
 	}
 
 	&__text {
-		font: 300 18px/25px $font-base;
+		font: 300 vw(18) $font-base;
+		line-height: vw(25);
 		text-transform: uppercase;
-		padding-right: 12px;
+		padding-right: vw(12);
 		border-right: 1px solid currentColor;
 		text-align: right;
 	}
 
 	&__search {
-		absolute(25px);
-		right: 25px;
+		absolute(vw(25));
+		right: vw(25);
 
 		.field {
 			&__input {
@@ -51,12 +69,20 @@
 		}
 
 		.btn {
-			font-size: 40px;
+			font-size: vw(40);
 			padding: 0.25em;
 
 			.icon {
 				font-size: 0.5em;
 			}
+		}
+	}
+
+	&__btn {
+		text-align: right;
+
+		.btn {
+			font-size: vw(40, 480);
 		}
 	}
 	

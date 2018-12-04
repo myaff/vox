@@ -16,39 +16,47 @@ block content
       .single__info
         .l-container
           .l-flex
-            .l-col-6
+            .l-col-6_sm-12
               .single__title !{single.title}
-              .single__readmore
+              .single__readmore.l-hidden-sm-down
                 a.readmore(href="#") Read more
-            .l-col-2
+            .l-col-2_sm-0
               .single__links
                 for item in single.links
                   .single__links-item
                     a.single__link(href=item.url)= item.title
-            .l-col-4
+            .l-col-4_sm-12
               .single__props
                 .props.props--primary
                   for item in single.props.primary
                     dl.props__item
                       dt.props__term !{item.name}: 
                       dd.props__desc !{item.value}
-              .single__more
+              .single__more.l-hidden-sm-down
                 button.btn.btn--plain.btn-accordion(data-target="#accordion-single")
                   +icon('arrow-down')
           #accordion-single.accordion
             .l-flex
-              .l-col-5
+              .l-col-5_sm-12
                 .single__desc
                   p !{single.desc}
-              .l-col-2(data-push-left="off-1")
+              .l-col-2_sm-0(data-push-left="off-1")
                 .single__team-text Team
-              .l-col-4
+              .l-col-4_sm-12_sm-first
                 .single__props
                   .props.props--secondary
                     for item in single.props.secondary
                       dl.props__item
                         dt.props__term !{item.name}: 
                         dd.props__desc !{item.value}
+              .l-col-0_sm-12.l-hidden-md-up
+                .single__links
+                  for item in single.links
+                    .single__links-item
+                      a.single__link(href=item.url)= item.title
+          .single__more.l-hidden-md-up
+              button.btn.btn--plain.btn-accordion(data-target="#accordion-single")
+                +icon('arrow-down')
       .single__photos
         .photos__grid
           for item in single.photos

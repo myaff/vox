@@ -6,10 +6,18 @@
     }
   }
   &__info {
-    padding: 90px 0;
+    padding: vw(90) 0;
+
+    @media $display-breakpoints.sm-and-down {
+      padding: vw(40, 480);
+    }
   }
   &__more {
-    padding-top: 1rem;
+    padding-top: vw(16);
+
+    @media $display-breakpoints.sm-and-down {
+      padding-top: vw(16, 480);
+    }
   }
 
   &__photos {
@@ -20,18 +28,38 @@
   }
 
   &__title {
-    font: 600 60px/1 $font-base;
-    margin-bottom: 10px;
+    font: 600 vw(60)/1 $font-base;
+    margin-bottom: vw(10);
+
+    @media $display-breakpoints.sm-and-down {
+      font-size: vw(60, 480);
+      margin-bottom: vw(10, 480);
+    }
+  }
+
+  &__links {
+    @media $display-breakpoints.sm-and-down {
+      margin-top: vw(12, 480);
+    }
   }
 
   &__link {
-    font: 600 24px/1.33 $font-base;
+    font: 600 vw(24)/1.33 $font-base;
     text-decoration: underline;
+
+    @media $display-breakpoints.sm-and-down {
+      font-size: vw(24, 480);
+    }
   }
 
   &__team-text,
   &__desc {
-    font: 600 24px/1.33 $font-base;
+    font: 600 vw(24)/1.33 $font-base;
+
+    @media $display-breakpoints.sm-and-down {
+      font-size: vw(20, 480);
+      font-weight: normal;
+    }
   }
 }
 
@@ -42,30 +70,49 @@
   }
 
   &__item {
-    margin-bottom: 90px;
+    margin-bottom: vw(90);
     flex: 0 0 100%;
+
+    @media $display-breakpoints.sm-and-down {
+      margin-bottom: vw(40, 480);
+    }
 
     &:last-child {
       margin-bottom: 0;
     }
 
-    &.size--1 {
-      flex-basis: 100%;
-    }
-    &.size--2 {
-      flex-basis: 50%;
-    }
-    &.size--3 {
-      flex-basis: calc((100% - 90px) / 2);
+    @media $display-breakpoints.md-and-up {
+      &.size--1 {
+        flex-basis: 100%;
+      }
+      &.size--2 {
+        flex-basis: 50%;
+      }
+      &.size--3 {
+        flex-basis: calc((100% - 4.69vw) / 2);
+      }
     }
   }
 }
 
 .props {
 
+  &--secondary {
+    @media $display-breakpoints.sm-and-down {
+      margin: vw(24, 480) 0;
+      padding: vw(24, 480) 0;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+    }
+  }
+
   &__item {
-    font: 24px/1.33 $font-base;
+    font: vw(24)/1.33 $font-base;
     margin: 0;
+
+    @media $display-breakpoints.sm-and-down {
+      font-size: vw(20, 480);
+    }
   }
   &__term {
     display: inline;

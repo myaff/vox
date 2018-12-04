@@ -7,81 +7,166 @@
       }
     }
 
+    &__info {
+      z-index: 2;
+    }
+
     &__content {
-      padding: 70px 0;
+      padding: vw(70) 0;
+
+      @media $display-breakpoints.sm-and-down {
+        padding: vw(36, 480) 0;
+      }
     }
 
     &__title {
-      font: 600 24px/0.8 $font-base;
+      font: 600 vw(24)/0.8 $font-base;
       text-transform: uppercase;
       display: inline-block;
       relative();
       padding-right: 0.5em;
-      margin-bottom: 50px;
+      margin-bottom: vw(50);
+
+      @media $display-breakpoints.sm-and-down {
+        font-size: vw(32, 480);
+        margin-bottom: vw(30, 480);
+      }
 
       &::after {
         content: '';
         display: block;
-        size(220px, 1px);
+        size(vw(220), 1px);
         absolute(0, 100%, 0px);
         background: currentColor;
+
+        @media $display-breakpoints.sm-and-down {
+          width: vw(225, 480);
+        }
       }
     }
 
     &__desc {
-      font: 300 24px/1.33 $font-base;
+      font: 300 vw(24)/1.33 $font-base;
+
+      @media $display-breakpoints.sm-and-down {
+        font-size: vw(24, 480);
+      }
     }
 
     &__more {
-      padding-top: 1rem;
+      padding-top: vw(16);
+
+      @media $display-breakpoints.sm-and-down {
+        padding-top: vw(16, 480);
+      }
     }
   }
 
   &__story .section {
+    &__title {
+      @media $display-breakpoints.sm-and-down {
+        margin-bottom: vw(43, 480);
+      }
+
+      &::after {
+        @media $display-breakpoints.sm-and-down {
+          width: vw(200, 480);
+        }
+      }
+    }
     &__icon {
-      absolute(120px, -75px);
+      absolute(vw(120), 0px);
+
+      @media $display-breakpoints.sm-and-down {
+        top: vw(88, 480);
+      }
 
       .icon {
-        size(240px);
+        size(vw(240));
+
+        @media $display-breakpoints.sm-and-down {
+          size(vw(180, 480));
+        }
       }
     }
   }
 
   &__team .section {
     &__content {
-      padding-bottom: 30px;
+      padding-bottom: vw(30);
       border-bottom: 1px solid $black;
+
+      @media $display-breakpoints.sm-and-down {
+        padding: vw(150, 480) 0 vw(48, 480);
+      }
     }
     &__icon {
-      absolute(-40px, 440px);
+      absolute(vw(-40), vw(440));
+
+      @media $display-breakpoints.sm-and-down {
+        top: vw(-24, 480);
+        left: auto;
+        right: 0;
+      }
 
       .icon {
-        size(240px);
+        size(vw(240));
+
+        @media $display-breakpoints.sm-and-down {
+          size(vw(150, 480));
+        }
       }
     }
   }
 
   &__press {
-    .section__title::before {
-      width: 286px;
+    .section__title::after {
+      width: vw(286);
+
+      @media $display-breakpoints.sm-and-down {
+        width: vw(294, 480);
+      }
     }
   }
 
   &__map {
     .map {
-      height: 670px;
-      background: $grey-light;
+      height: vw(670);
+      background: $grey-lighter;
+
+      @media $display-breakpoints.sm-and-down {
+        height: vw(360, 480);
+      }
     }
 
     .section {
+      &__title::after {
+        @media $display-breakpoints.sm-and-down {
+          width: vw(120, 480);
+        }
+      }
       &__content {
-        min-height: 510px;
+        min-height: vw(510);
+
+        @media $display-breakpoints.sm-and-down {
+          min-height: vw(370, 480);
+          padding-bottom: vw(180, 480);
+        }
       }
       &__icon {
         absolute(0, 0px, 0px);
 
+        @media $display-breakpoints.sm-and-down {
+          left: auto;
+          right: 0;
+        }
+
         .icon {
-          size(210px, 240px);
+          size(vw(210), vw(240));
+
+          @media $display-breakpoints.sm-and-down {
+            size(vw(150, 480), vw(170, 480));
+          }
         }
       }
     }
@@ -92,10 +177,22 @@
   column-count: 4;
   column-gap: $grid-gutter;
 
+  @media $display-breakpoints.sm-and-down {
+    column-count: 1;
+  }
+
   &__item {
-    font: 600 24px/1.33 $font-base;
+    font: 600 vw(24)/1.33 $font-base;
     text-transform: uppercase;
     color: #a7a9ac;
     border-bottom: 1px solid currentColor;
+
+    @media $display-breakpoints.sm-and-down {
+      font-size: vw(24, 480);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
   }
 }

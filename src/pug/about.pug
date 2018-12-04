@@ -14,44 +14,60 @@ block content
       .section.about__story
         .section__imgs
           .l-flex-noGutter
-            .l-col-6
+            .l-col-6_sm-12
               .section__img: img(src="build/img/about/1.jpg", alt="")
-            .l-col-6
+            .l-col-0_sm-12.l-hidden-md-up
+              .section__info
+                .section__icon
+                  +icon('v')
+                .l-container
+                  .section__content
+                    .section__heading
+                      .section__title Our story
+            .l-col-6_sm-12
               .section__img: img(src="build/img/about/2.jpg", alt="")
         .section__info
+          .section__icon.l-hidden-sm-down
+            +icon('v')
           .l-container
             .section__content
-              .section__icon
-                +icon('v')
               .l-flex
-                .l-col-6
+                .l-col-6_sm-0
                   .section__heading
                     .section__title Our story
-                .l-col-6
+                .l-col-6_sm-12
                   .section__desc !{about.story.primary}
                   .section__more
                     button.btn.btn--plain.btn-accordion(data-target="#accordion-story")
                       +icon('arrow-down')
-                .l-col-6(data-push-left="off-6")
+                .l-col-6_sm-12(data-push-left="off-6_sm-0")
                   #accordion-story.accordion
                     .section__desc !{about.story.secondary}
       .section.about__team
-        .section__img: img(src="build/img/about/3.jpg", alt="")
+        .section__img.l-hidden-sm-down: img(src="build/img/about/3.jpg", alt="")
+        .section__info.l-hidden-md-up
+          .l-container
+              .section__heading
+                .section__title Our team
+          .section__img: img(src="build/img/about/3-m.jpg", alt="")
+          .l-container
+            .section__icon
+              +icon('o')
         .section__info
           .l-container
             .section__content
-              .section__icon
+              .section__icon.l-hidden-sm-down
                 +icon('o')
               .l-flex
-                .l-col-6
+                .l-col-6_sm-0
                   .section__heading
                     .section__title Our team
-                .l-col-6
+                .l-col-6_sm-12
                   .section__desc !{about.team.primary}
                   .section__more
                     button.btn.btn--plain.btn-accordion(data-target="#accordion-team")
                       +icon('arrow-down')
-                .l-col-6(data-push-left="off-6")
+                .l-col-6_sm-12(data-push-left="off-6_sm-0")
                   #accordion-team.accordion
                     .section__desc !{about.team.secondary}
       .section.about__press
@@ -63,6 +79,10 @@ block content
                 for item in about.press
                   .press__item= item
       .section.about__map
+        .section__info.l-hidden-md-up
+          .l-container
+            .section__heading
+              .section__title Where we work
         #map.map
         .section__info
           .l-container
@@ -70,15 +90,15 @@ block content
               .section__icon
                 +icon('x')
               .l-flex
-                .l-col-6
+                .l-col-6_sm-0
                   .section__heading
                     .section__title Where we work
-                .l-col-6
+                .l-col-6_sm-12
                   .section__desc !{about.where.primary}
                   .section__more
                     button.btn.btn--plain.btn-accordion(data-target="#accordion-map")
                       +icon('arrow-down')
-                .l-col-6(data-push-left="off-6")
+                .l-col-6_sm-12(data-push-left="off-6_sm-0")
                   #accordion-map.accordion
                     .section__desc !{about.where.secondary}
 
