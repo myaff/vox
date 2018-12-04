@@ -63,6 +63,11 @@ function init(){
         checkInput($(this));
     });
 
+    $('.btn-search').on('click', function(e){
+        e.preventDefault();
+        $('#search').focus();
+    });
+
     flow.on('keydown', function(){
         $(this).change();
     });

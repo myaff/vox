@@ -26,10 +26,10 @@ block page
         include parts/header
         include parts/sidebar
         block content
+        include parts/animate
         if hasFooter
           include parts/footer
         include parts/aside
-      .page-rotate
       //- include counters.html
       
       each item in settings.scripts

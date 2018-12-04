@@ -18,9 +18,7 @@ $(document).ready(function(){
     $('html').addClass('is-loaded');
   });
   
-  $('html').addClass('is-animating');
-  
-  //Animation.init();
+  Animation.init();
   Forms.init();
 
   /*

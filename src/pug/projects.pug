@@ -13,7 +13,7 @@ block content
     .projects
       for item in projects
         .projects__item.project
-          a.project__link(href=item.url)
+          a.project__link.anim-link(href=item.url)
             .project__img: img(src=item.img)
             .project__info
               .project__title !{item.title}

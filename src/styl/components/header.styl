@@ -24,9 +24,18 @@
 
 	&__logo {
 		transform: translateZ(0);
+		line-height: 1;
 
 		a {
-			flexy(flex-start, flex-end);
+			display: inline-flex;
+			justify-content: flex-start;
+			align-items: flex-end;
+			height: vw(40);
+			line-height: 1;
+
+			@media $display-breakpoints.sm-and-down {
+				height: vw(40, 480);
+			}
 		}
 
 		.icon {
@@ -50,21 +59,32 @@
 	}
 
 	&__text {
-		font: 300 vw(18) $font-base;
-		line-height: vw(25);
-		text-transform: uppercase;
 		padding-right: vw(12);
 		border-right: 1px solid currentColor;
 		text-align: right;
 	}
 
 	&__search {
-		absolute(vw(25));
+		absolute(vw(40));
 		right: vw(25);
 
 		.field {
+			flexy(flex-end, center);
+			opacity: 0.4;
+			transition: opacity 0.3s;
+
+			&.has-focus {
+				opacity: 1;
+			}
+			
 			&__input {
-				display: none;
+				width: vw(500);
+				font: 300 vw(18) $font-base;
+				line-height: vw(25);
+				text-transform: uppercase;
+				padding: 0;
+				height: 2em;
+				border: 0;
 			}
 		}
 
@@ -73,7 +93,8 @@
 			padding: 0.25em;
 
 			.icon {
-				font-size: 0.5em;
+				display: block;
+				font-size: vw(20);
 			}
 		}
 	}

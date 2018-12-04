@@ -3,18 +3,16 @@ include ../mixins
   .l-container
     .header__content
       .l-flex-middle-noBottom
-        .l-col-6_sm-8
+        .l-col-8
           .header__logo
             a(href="/")
               +icon('logo')
               .text Architects
-        .l-col-5.l-hidden-sm-down
-          .header__text Urban design and landscape
         .l-col-4.l-hidden-md-up
           .header__btn
             button.btn.btn--plain.btn-open-aside.btn-burger
               +icon('burger')
   .header__search.l-hidden-sm-down
       +fieldInput('search')
-        button.btn.btn--plain
+        button.btn.btn--plain.btn-search
           +icon('loupe')
