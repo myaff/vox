@@ -30,8 +30,8 @@ function init () {
 
   $('.anim-link').on('click', function(e) {
     e.preventDefault();
-    $('html').trigger('animation-start');
     if (debug) {
+      $('html').trigger('animation-start');
       setTimeout(function(){
         $('html').trigger('content-loaded');
       }, delay);
