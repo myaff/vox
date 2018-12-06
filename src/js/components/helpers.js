@@ -158,6 +158,14 @@ function closeModal(modal) {
   }
 }
 
+function setScrollpad(els) {
+  if ($('.layout').outerHeight() > window.outerHeight) {
+    els.css({'padding-right': getNativeScrollbarWidth() + 'px'});
+  } else {
+    els.css({'padding-right': '0px'});
+  }
+}
+
 
 /**
  * инициализация событий для переключателей классов
@@ -204,21 +212,11 @@ function init(){
       $('.page-rotate').fadeIn(500);
     }
 
-    $(window).on('resizeend', function(){
-      if (Main.DeviceDetection.isLandscape()) {
-        $('html, body').css('overflow-y', 'hidden');
-        $('html').addClass('rotate');
-        $('.page-rotate').fadeIn(500);
-      } else {
-        $('.page-rotate').fadeOut(500);
-        $('html').removeClass('rotate');
-        $('html, body').css('overflow-y', '');
-      }
-    });
-  }
+    setScrollpad($('.layout, .page-animate'));
 
-  if ($('.layout').outerHeight() > window.outerHeight) {
-    $('.layout').css({'padding-right': getNativeScrollbarWidth() + 'px'});
+    $(window).on('resizeend', function(){
+      setScrollpad($('.layout, .page-animate'));
+    });
   }
   
   $('.btn-open-aside').on('click', function(e){

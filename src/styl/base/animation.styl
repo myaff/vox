@@ -1,32 +1,35 @@
 .page-animate {
   absolute(0px, 0px);
   size(100%);
-  padding-right: vw(90);
-  padding-top: vw(115);
   overflow: hidden;
   z-index: -100;
+
+  &__inner {
+    padding-right: vw(90);
+    padding-top: vw(115);
+
+    @media $display-breakpoints.sm-and-down {
+      padding-top: vw(100, 480);
+      padding-right: 0;
+    }
+  }
 
   .is-animating & {
     z-index: 1;
   }
 
-  @media $display-breakpoints.sm-and-down {
-    padding-top: vw(100, 480);
-    padding-right: 0;
-  }
-
 	&__item {
-		size(100%, vw(305));
+		width: 100%;
 		margin: vw(90) 0;
     background: $black;
     transition-property: transform;
-    transform: translateX(100%);
+    transform: translateX(100%) translateZ(0);
 
     .animation-start & {
-      transform: translateX(0);
+      transform: translateX(0) translateZ(0);
     }
     .animation-end & {
-      transform: translateX(-100%);
+      transform: translateX(-100%) translateZ(0);
     }
 
 		&:first-child,
@@ -79,4 +82,11 @@
       }
 		}
 	}
+}
+
+.page {
+  transition: opacity 0.5s;
+  .content-loaded & {
+    opacity: 0;
+  }
 }

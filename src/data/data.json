@@ -262,28 +262,94 @@
 			"secondary": "VOX ARCHITECTS – is not only an architectural studio with the permanent highly qualified employees, it is a union of professionals and expert partners: graphic and industrial designers, specialists in furniture and equipment manufacture and design, lightning designers, engineers, technologists, constructors, landscape architects, specialists in branding, naming and corporate identity."
 		},
 		"press": [
-			"ISALONI",
-			"DOMUS",
-			"ELLE DECOR",
-			"ARCH DEILY",
-			"AD / ARCHITECTURAL DIGEST",
-			"STRELKA",
-			"1OO% DESIGN LONDON",
-			"WWW.ARCHI.RU",
-			"BRITISH HIGHER SCHOOL OF ART & DESIGN",
-			"PROJECT NEXT",
-			"SALON",
-			"TATLIN",
-			"ARCH MOSCOW",
-			"LOOK AT ME",
-			"MARСH / ARH SCHOOL",
-			"BEST OFFICE AWARDS",
-			"LA BIENNALE DI VENEZIA",
-			"DI ARCHITETTURA",
-			"МГХПА",
-			"INTERIA AWARDS",
-			"IDA",
-			"INTERNI"
+			{
+				"title": "ISALONI",
+				"link": "#"
+			},
+			{
+				"title": "DOMUS",
+				"link": "#"
+			},
+			{
+				"title": "ELLE DECOR",
+				"link": "#"
+			},
+			{
+				"title": "ARCH DEILY",
+				"link": "#"
+			},
+			{
+				"title": "AD / ARCHITECTURAL DIGEST",
+				"link": "#"
+			},
+			{
+				"title": "STRELKA",
+				"link": "#"
+			},
+			{
+				"title": "1OO% DESIGN LONDON",
+				"link": "#"
+			},
+			{
+				"title": "WWW.ARCHI.RU",
+				"link": "#"
+			},
+			{
+				"title": "BRITISH HIGHER SCHOOL OF ART & DESIGN",
+				"link": "#"
+			},
+			{
+				"title": "PROJECT NEXT",
+				"link": "#"
+			},
+			{
+				"title": "SALON",
+				"link": "#"
+			},
+			{
+				"title": "TATLIN",
+				"link": "#"
+			},
+			{
+				"title": "ARCH MOSCOW",
+				"link": "#"
+			},
+			{
+				"title": "LOOK AT ME",
+				"link": "#"
+			},
+			{
+				"title": "MARСH / ARH SCHOOL",
+				"link": "#"
+			},
+			{
+				"title": "BEST OFFICE AWARDS",
+				"link": "#"
+			},
+			{
+				"title": "LA BIENNALE DI VENEZIA",
+				"link": "#"
+			},
+			{
+				"title": "DI ARCHITETTURA",
+				"link": "#"
+			},
+			{
+				"title": "МГХПА",
+				"link": "#"
+			},
+			{
+				"title": "INTERIA AWARDS",
+				"link": "#"
+			},
+			{
+				"title": "IDA",
+				"link": "#"
+			},
+			{
+				"title": "INTERNI",
+				"link": "#"
+			}
 		],
 		"where": {
 			"primary": "Due to the great experience wide geography of realized projects VOX ARCHITECTS can lead the projects on distance and realize different scale",

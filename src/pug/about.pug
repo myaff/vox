@@ -77,7 +77,8 @@ block content
               .section__title Press
               .press
                 for item in about.press
-                  .press__item= item
+                  .press__item
+                    a.press__link(href=item.link)= item.title
       .section.about__map
         .section__info.l-hidden-md-up
           .l-container
