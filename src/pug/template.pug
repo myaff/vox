@@ -13,11 +13,8 @@ block page
         //- include parts/favicon
         //- link(rel="shortcut icon" href="favicon.ico", type="image/x-icon")
         link(href="build/css/main.css", rel="stylesheet")
-        script(src="build/js/vendor/jquery-3.2.1.min.js")
-        script(src="build/js/vendor/jquery.ba-throttle-debounce.js")
-        script(src="https://cdn.rawgit.com/iserdmi/afterlag-js/2.0.2/dist/jquery.afterlag.min.js")
-        script(src="build/img/svg/sprite.js")
-        script(src="https://yastatic.net/share2/share.js")
+        each item in settings.scripts.head
+          script(src=item)
     body
       .svg-sprite
       script
@@ -32,6 +29,6 @@ block page
         include parts/aside
       //- include counters.html
       
-      each item in settings.scripts
+      each item in settings.scripts.foot
         script(src=item)
       script(src="build/js/main.js")

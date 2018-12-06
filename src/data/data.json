@@ -1,8 +1,18 @@
 {
 	"settings": {
-		"scripts": [
-			"build/js/vendor/owl.carousel.min.js"
-		],
+		"scripts": {
+			"head": [
+				"build/js/vendor/jquery-3.2.1.min.js",
+				"build/js/vendor/jquery.ba-throttle-debounce.js",
+				"https://cdn.rawgit.com/iserdmi/afterlag-js/2.0.2/dist/jquery.afterlag.min.js",
+				"build/img/svg/sprite.js",
+				"https://yastatic.net/share2/share.js",
+				"https://api-maps.yandex.ru/2.1/?apikey=41b512d5-2a9e-49e4-b030-fe9705e7e841&lang=ru_RU"
+			],
+			"foot": [
+				"build/js/vendor/owl.carousel.min.js"
+			]
+		},
 		"socials": [
 			"vkontakte",
 			"facebook",

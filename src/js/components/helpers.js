@@ -205,6 +205,12 @@ function init(){
     }
   });
 
+  setScrollpad($('.layout, .page-animate'));
+
+  $(window).on('resizeend', function(){
+    setScrollpad($('.layout, .page-animate'));
+  });
+
 
   if ($('.layout').hasClass('layout--home') && Main.DeviceDetection.isMobile()) {
     if (Main.DeviceDetection.isLandscape()) {
@@ -212,11 +218,6 @@ function init(){
       $('.page-rotate').fadeIn(500);
     }
 
-    setScrollpad($('.layout, .page-animate'));
-
-    $(window).on('resizeend', function(){
-      setScrollpad($('.layout, .page-animate'));
-    });
   }
   
   $('.btn-open-aside').on('click', function(e){

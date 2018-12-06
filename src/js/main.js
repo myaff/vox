@@ -6,6 +6,7 @@ let Share = require("./components/share");
 let Youtube = require("./components/youtube");
 let Statistic = require("./components/statistic");
 let Forms = require("./components/forms");
+let Maps = require("./components/map");
 
 $(document).ready(function(){
   
@@ -30,6 +31,8 @@ $(document).ready(function(){
   Youtube.init();
   Statistic.init();
   
+  ymaps.ready(Maps.init);
+  
 });
 
 
@@ -46,5 +49,6 @@ module.exports = {
   Animation,
   Youtube,
   Statistic,
-  Forms
+  Forms,
+  Maps
 };
