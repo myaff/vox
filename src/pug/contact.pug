@@ -11,7 +11,7 @@ prepend page
 block content
   .page(class="page--" + currentPage)
     .contacts-page
-      #map.map
+      #contact-map.map(data-center=about.contacts.map.center, data-placemark=about.contacts.map.mark)
       .contacts-page__content
         .l-container
           .l-flex

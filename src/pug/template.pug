@@ -19,6 +19,7 @@ block page
       .svg-sprite
       script
         | $('.svg-sprite').html(SVG_SPRITE);
+      script var markers = $.getJSON( "build/data/markers.json", function(data) {console.dir(data);})
       .layout(class="layout--" + layout)
         include parts/header
         include parts/sidebar

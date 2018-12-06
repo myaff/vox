@@ -18,6 +18,7 @@
   <body>
     <div class="svg-sprite"></div>
     <script>$('.svg-sprite').html(SVG_SPRITE);</script>
+    <script>var markers = $.getJSON( "build/data/markers.json", function(data) {console.dir(data);})</script>
     <div class="layout layout--about">
       <div class="header">
         <div class="l-container">
@@ -221,7 +222,7 @@
                 </div>
               </div>
             </div>
-            <div class="map" id="map"></div>
+            <div class="map" id="about-map" data-center="55.80433406892266,37.585969499999955" data-placemark="55.80433406892266,37.585969499999955"></div>
             <div class="section__info">
               <div class="l-container">
                 <div class="section__content">
