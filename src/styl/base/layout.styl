@@ -16,12 +16,19 @@ body {
 }
 .l-container {
   relative();
-  margin-right: auto
-  margin-left: auto
+  margin-right: auto;
+  margin-left: auto;
   width: 100%;
-  min-width: ($container-widths.min + $grid-gutter);
-  max-width: ($container-widths.max + $grid-gutter);
+  min-width: $container-widths.min;
+  max-width: $container-widths.max;
   padding: 0 ($grid-gutter / 2);
+
+  @media $display-breakpoints.md-and-up {
+    transform: translateX(vw(-15));
+  }
+  @media $display-breakpoints.sm-and-down {
+    max-width: vw(400, 480);
+  }
 }
 
 .layout {
